@@ -17,4 +17,4 @@ Spinto is a website authoring tool using the
 
 See this example site live at:
 
-  [boostrapbase.spintoapp.com](http://skeletoncss.spintoapp.com)
+  [bootstrapbase.spintoapp.com](http://skeletoncss.spintoapp.com)
