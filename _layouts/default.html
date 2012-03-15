@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
+  </head>
+  <body>
+  <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="{% if page.url == '/index.html' %}active{% endif %}">
+                <a href="/index.html">Welcome</a>
+              </li>
+              <li class="{% if page.url == '/location_hours.html' %}active{% endif %}">
+                <a href="/location_hours.html">Location &amp; Hours</a>
+              </li>
+              <li class="{% if page.url == '/blog.html' %}active{% endif %}">
+                <a href="/blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      {{ content }}
+    </div>
+
+    <div class="container">
+      <footer>
+        <hr />
+        <div id="footer-content">
+          <p><small>&copy; My Store. Contact us: <a href="mailto:fakeshop@spintoapp.com">fakeshop@spintoapp.com</a>, (555) 555 - 5555</small></p>
+        </div>
+      </footer>
+    <div>
+  </body>
+</html>
