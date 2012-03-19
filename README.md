@@ -11,10 +11,32 @@ This site has the following pages:
 * `blog.html` - An index page for the blog posts.
 * Individual pages for each blog post.
 
-Spinto is a website authoring tool using the
-[Spinto site generator](http://github.com/mixonic/spinto) based on
-[Jekyll](https://github.com/mojombo/jekyll).
+
+**Spinto documentation**
+
+If you're new to Spinto, review the documentation before diving into code:
+
+* [Spinto Developer Documentation](http://www.spintoapp.com/documentation)
+
+
+**Running the site locally**
+
+To run this site on your local computer, install the
+[Spinto site generator](http://github.com/mixonic/spinto):
+
+``` bash
+gem install spinto
+```
+
+Then start the server:
+
+``` bash
+spinto-site --server --auto
+```
+
+
+**Additional information**
 
 See this example site live at:
 
-  [bootstrapbase.spintoapp.com](http://skeletoncss.spintoapp.com)
+* [bootstrapbase.spintoapp.com](http://skeletoncss.spintoapp.com)
