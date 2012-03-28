@@ -28,15 +28,13 @@
           </a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="{% if page.url == '/index.html' %}active{% endif %}">
-                <a href="/index.html">Welcome</a>
-              </li>
-              <li class="{% if page.url == '/location_hours.html' %}active{% endif %}">
-                <a href="/location_hours.html">Location &amp; Hours</a>
-              </li>
-              <li class="{% if page.url == '/blog.html' %}active{% endif %}">
-                <a href="/blog.html">Blog</a>
-              </li>
+              {% for navigable in site.pages sort_by:title order:descending %}
+                {% if navigable.title %}
+                <li class="{% if page.url == navigable.url %}active{% endif %}">
+                  <a href="{{ navigable.url }}">{{ navigable.title }}</a>
+                </li>
+                {% endif %}
+              {% endfor %}
             </ul>
           </div>
         </div>
