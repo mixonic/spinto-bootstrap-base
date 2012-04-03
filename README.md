@@ -40,4 +40,4 @@ spinto-site --server --auto
 
 See this example site live at:
 
-* [bootstrapbase.spintoapp.com](http://skeletoncss.spintoapp.com)
+* [bootstrapbase.spintoapp.com](http://bootstrapbase.spintoapp.com)
