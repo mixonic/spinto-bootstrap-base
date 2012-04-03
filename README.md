@@ -2,7 +2,7 @@ Spinto base with Bootstrap
 ==========================
 
 A simple site to get you started with Jekyll and [Spinto](http://www.spintoapp.com)
-using the [Bootstrap](http://twitter.github.com/bootstrap/) framework.
+using the [Bootstrap](http://twitter.github.com/bootstrap/) framework v2.0.1.
 
 This site has the following pages:
 
