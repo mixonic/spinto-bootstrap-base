@@ -4,5 +4,6 @@
 #
 # For more details about configuring Jekyll.
 #
+title: "Grizzly Bar"
 exclude:
   - README.md

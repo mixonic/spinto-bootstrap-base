@@ -28,6 +28,9 @@
           </a>
           <div class="nav-collapse">
             <ul class="nav">
+              <li class="brand">
+                {{ site.title }}
+              </li>
               {% for navigable in site.pages sort_by:title order:descending %}
                 {% if navigable.title %}
                 <li class="{% if page.url == navigable.url %}active{% endif %}">
@@ -54,7 +57,7 @@
             <img src="http://assets.spintoapp.com/assets/powered-by-spinto-32.png" style="float:left" />
           </a>
           <p style="margin-top:5px;margin-left:12px;float:left">
-            <small>&copy; My Store. Contact us: <a href="mailto:fakeshop@spintoapp.com">fakeshop@spintoapp.com</a>, (555) 555 - 5555</small>
+            <small>&copy; {{ site.title }}.</small>
           </p>
           <br class="clear" />
           <br class="clear" />

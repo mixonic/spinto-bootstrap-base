@@ -3,7 +3,7 @@ title: Welcome to our new website
 layout: post
 ---
 
-When we opened Grizzly Bar in 1990, the Internet
+When we opened this spot in 1990, the Internet
 was the furthest thing from our minds! But the times have
 changed, and we're happy to be online.
 
