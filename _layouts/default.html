@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/stylesheets/application.css">
+    <link rel="stylesheet" href="/stylesheets/application.css" />
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="/img/favicon.ico">
-    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png" />
+    <link href="/rss.xml" rel="alternate" type="application/rss+xml" />
+    <link href="/atom.xml" rel="alternate" type="application/atom+xml" />
   </head>
   <body>
   <!-- Navbar
@@ -31,7 +33,7 @@
               <li class="brand">
                 {{ site.title }}
               </li>
-              {% for navigable in site.pages sort_by:title order:descending %}
+              {% for navigable in site.html_pages sort_by:title order:descending %}
                 {% if navigable.title %}
                 <li class="{% if page.url == navigable.url %}active{% endif %}">
                   <a href="{{ navigable.url }}">{{ navigable.title }}</a>
